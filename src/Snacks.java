@@ -14,7 +14,7 @@ public class Snacks extends Product{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder(super.toString());
-        sb.append(String.format(" со вкусом %s, вес упаковки %4.1 грамм.", taste, weight));
+        sb.append(String.format(" со вкусом %s, вес упаковки %4.1f грамм.", taste, weight));
         return sb.toString();
     }
 }

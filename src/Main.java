@@ -5,11 +5,11 @@ import java.util.Date;
 public class Main {
     public static void main(String[] args) {
         VendingMachine machine = new VendingMachine();
-        machine.addProduct(new Product("Lays", 100));
+        machine.addProduct(new Snacks("Lays", 100, 120, "Зеленый лук"));
         machine.addProduct(new Product("Mars", 70));
         machine.addProduct(new Product("Twix", 70.99));
         machine.addProduct(new Product("Алёнка", 90));
-        machine.addProduct(new Product("Колокольчик", 85));
+        machine.addProduct(new Drinks("Колокольчик", 85, .5f));
         machine.addProduct(new Perishable("Молоко Бурёнка", 85, new Date(2023, 1, 25)));
         machine.addProduct(new Perishable("Молоко Коровка", 85, new Date(2023, 1, 25)));
         machine.addProduct(new Perishable("Молоко Василёк", 85, new Date(2023, 1, 25)));
